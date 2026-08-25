@@ -1,458 +1,691 @@
-# UniGuide AI & AP EAMCET / AP EAPCET College Predictor Platform
+# 🎓 UniGuide AI
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.109.0-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![React 18](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://reactjs.org)
-[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-FF6F00)](https://www.trychroma.com)
-[![MongoDB Atlas](https://img.shields.io/badge/MongoDB-Atlas%20Cloud-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/cloud/atlas)
-[![Google Gemini API](https://img.shields.io/badge/Google%20Gemini-1.5%20Flash-4285F4?logo=google&logoColor=white)](https://ai.google.dev)
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Production-000000?logo=vercel&logoColor=white)](https://frontend-peach-nine-9dyn34fhbi.vercel.app)
-[![Render Deployment](https://img.shields.io/badge/Render-Active-46E3B7?logo=render&logoColor=white)](https://rag-document-ihnt.onrender.com)
-[![AP EAMCET Live Portal](https://img.shields.io/badge/AP%20EAMCET-Live%20Portal-007ACC?logo=react&logoColor=white)](https://collegepipe.in/apeamcet.html)
+### AI-Powered College Prediction, Exam Preparation, Counselling & University Intelligence Platform
 
-> **UniGuide AI & AP EAMCET Predictor** is a production-ready, AI-powered college prediction, RAG-driven university assistant, and counselling decision-support platform for **JEE Main / Advanced** and **AP EAMCET / AP EAPCET** aspirants. Powered by Retrieval-Augmented Generation (RAG), ChromaDB vector search, Google Gemini AI, MongoDB Atlas metadata persistence, and a multi-tiered admission probability engine, UniGuide AI transforms complex historical cutoff data into actionable, transparent, and explainable recommendations.
+**UniGuide AI** is a full-stack education platform designed to help students **prepare for competitive exams, predict colleges, compare institutions, analyze admission cutoffs, plan counselling choices, and access university information through AI-powered document search.**
+
+The platform brings together **college prediction, counselling intelligence, college discovery, comparison tools, exam preparation, mock tests, previous-year questions, performance analytics, and Retrieval-Augmented Generation (RAG)** into a unified experience.
 
 ---
 
-## 🌐 Live Application & Deployment Links
+## 🚀 Platform at a Glance
 
-| Resource | URL Link | Deployment Status | Description |
-| :--- | :--- | :--- | :--- |
-| **🐙 GitHub Repository** | [https://github.com/Livesh28/RAG_DOCUMENT](https://github.com/Livesh28/RAG_DOCUMENT) | `Main Branch (Up to date)` | Complete source code, Docker configs, and setup scripts |
-| **🚀 Live Application (Vercel)** | [https://frontend-peach-nine-9dyn34fhbi.vercel.app](https://frontend-peach-nine-9dyn34fhbi.vercel.app) | `Active (Production)` | Primary SPA frontend deployed on Vercel Edge Network |
-| **🚀 Live Application (Render)** | [https://rag-document-ihnt.onrender.com](https://rag-document-ihnt.onrender.com) | `Active (Production)` | Secondary full-stack deployment on Render |
-| **⚙️ Backend API Base** | [https://rag-document-ihnt.onrender.com/api/v1](https://rag-document-ihnt.onrender.com/api/v1) | `Online (REST API)` | FastAPI REST API router endpoint |
-| **🎯 Predictor API** | [https://rag-document-ihnt.onrender.com/api/v1/predict](https://rag-document-ihnt.onrender.com/api/v1/predict) | `Interactive` | POST endpoint for score/rank prediction & choice matrix |
-| **📖 OpenAPI Swagger Docs** | [https://rag-document-ihnt.onrender.com/docs](https://rag-document-ihnt.onrender.com/docs) | `Live Specs` | Interactive API testing playground and schema viewer |
-| **🚀 Live Application (AP EAMCET)** | [https://collegepipe.in/apeamcet.html](https://collegepipe.in/apeamcet.html) | `Active (Production)` | AP EAMCET / AP EAPCET College Predictor Portal |
+### 🎯 College Prediction
+
+* JEE Main College Predictor
+* JEE Advanced College Predictor
+* CSAB / counselling prediction
+* AP EAMCET / AP EAPCET College Predictor
+* NEET UG College Predictor
+* State-level counselling predictors
+* Rank-based college matching
+* Category-aware prediction
+* Gender-aware prediction
+* Home-state / regional preferences
+* Branch and course preferences
+* College-type filtering
+* Location and district filtering
+* Fee-based filtering
+* Dream / Safe recommendations
+* Personalized college shortlists
+
+### 🏫 College Discovery & Comparison
+
+* College search and discovery
+* Engineering college explorer
+* Medical college discovery
+* Private college explorer
+* IIT vs NIT comparison
+* College-to-college comparison
+* Branch comparison
+* Fees comparison
+* Placement comparison
+* NIRF and ranking information
+* Location and college-type filtering
+* Admission cutoff comparison
+
+### 📊 Admission Intelligence
+
+* Historical cutoff analysis
+* Opening and closing ranks
+* Multi-year cutoff trends
+* Rank-gap analysis
+* Dream vs Safe classification
+* Personalized Top College recommendations
+* Branch preference matching
+* Admission probability analysis
+
+### 📝 Counselling Intelligence
+
+* JEE counselling support
+* College choice planning
+* Preference ordering
+* Branch-weighted recommendations
+* Risk-balanced college selection
+* Counselling-specific predictors
+
+### 🧪 Exam Preparation
+
+* JEE Main PYQs
+* JEE Advanced PYQs
+* Full-paper practice
+* Chapter-wise tests
+* Full-syllabus mock tests
+* Real-exam-style CBT interface
+* Detailed solutions
+* Official answer keys
+* Question-level performance tracking
+
+### 📈 Test Analytics
+
+* Attempt history
+* Per-question timing
+* Error tracking
+* Chapter-wise performance
+* Incorrect-question tracking
+* Mistake Notebook
+* Re-practice workflow
+* Test performance analysis
+
+### 🤖 AI University Assistant
+
+* Retrieval-Augmented Generation
+* University document Q&A
+* PDF ingestion
+* Semantic search
+* HyDE query expansion
+* Vector retrieval
+* Gemini-powered answers
+* Page-level citations
+* Confidence scoring
 
 ---
 
-## 🎬 Demo Video
+# 🧠 What Problem Does UniGuide AI Solve?
 
-<div align="center">
-<iframe src="https://drive.google.com/file/d/1KwtBSWSbu_Wxh8rFHdeJNfqwqW006rmq/preview" width="720" height="420" allow="autoplay; encrypted-media" frameborder="0"></iframe>
-</div>
-
-**Watch the full demo on Google Drive:** [View UniGuide AI Demo Video](https://drive.google.com/file/d/1KwtBSWSbu_Wxh8rFHdeJNfqwqW006rmq/view?usp=sharing)
-
----
-
-## 🎓 AP EAMCET / AP EAPCET College Predictor Specification
-
-### 📌 Overview
-The **AP EAMCET College Predictor** subsystem is a modern decision-support tool designed specifically for AP EAMCET / AP EAPCET engineering aspirants. Instead of forcing students to manually search through static PDF cutoff matrices, the system evaluates multi-dimensional student parameters against historical counselling trends.
-
-Inputs analyzed:
-- Student Rank
-- Reservation Category (`OC`, `OBC-NCL`, `EWS`, `SC`, `ST`, `PwD`)
-- Gender (`Gender-Neutral`, `Female-Only`)
-- Local Area / Region (`AU`, `SVU`, `OU`, `Non-Local`)
-- Preferred Engineering Branches (CSE, AI & ML, AI & DS, IT, ECE, EEE, Mechanical, Civil, Chemical, etc.)
-- Preferred Districts / Locations
-- Annual Fee Preferences
-- College Type Preferences (Government, Private, University, Autonomous)
-
-Colleges and branches are dynamically categorized into 5 probability tiers:
-- 🟢 **Safe**: Rank is significantly better than historical closing ranks.
-- 🔵 **Likely**: Rank has a strong historical admission probability.
-- 🟡 **Moderate**: Rank is close to historical cutoff ranges.
-- 🟠 **Reach**: Rank is slightly outside historical ranges but worth targeting.
-- 🔴 **Unlikely**: Rank is significantly outside historical cutoff limits.
-
----
-
-### 🎯 Problem Statement vs. 💡 Our Solution
-
-| Problem Faced by Aspirants | Our Platform Solution |
-| :--- | :--- |
-| **Overwhelming Cutoff Data**: Thousands of rows across multiple rounds, categories, and colleges. | **Automated Normalization**: Instant filtering and rank comparison across all colleges and branches. |
-| **Lack of Personalized Insight**: Generic lists don't answer *"Where can I get admitted?"* | **Personalized Scoring**: Evaluates exact rank, category, gender, and region for tailored predictions. |
-| **Complex College Comparison**: Difficulty comparing fees, packages, and accreditations. | **Side-by-Side Comparison**: Interactive matrix comparing fees, NIRF rank, placements, and hostel facilities. |
-| **Counselling Preference Confusion**: Inability to strategically order JoSAA / AP EAMCET options. | **AI Choice Generator**: Algorithmic choice ordering tailored to risk tolerance and preference order. |
-| **Opaque Cutoff Trends**: Single-year cutoffs miss shift trends over time. | **Multi-Year Trend Analysis**: Displays 3-year cutoff trajectory (e.g., *Becoming more competitive*). |
-
----
-
-### 🚀 Data & Decision Flow Pipeline
+Students preparing for engineering and medical admissions often have to use multiple disconnected platforms for:
 
 ```text
-               ┌──────────────────────────────────────────┐
-               │              Student Input               │
-               │  Rank | Category | Gender | Region | Fee  │
-               └────────────────────┬─────────────────────┘
-                                    │
-                                    ▼
-               ┌──────────────────────────────────────────┐
-               │            Prediction Engine             │
-               │  Historical Cutoff Matrix + Trend Score  │
-               └────────────────────┬─────────────────────┘
-                                    │
-                                    ▼
-               ┌──────────────────────────────────────────┐
-               │          Tiered Probability Output       │
-               │ Safe 🟢 | Likely 🔵 | Moderate 🟡 | Reach  │
-               └────────────────────┬─────────────────────┘
-                                    │
-                                    ▼
-               ┌──────────────────────────────────────────┐
-               │         Decision Support System          │
-               │  Explanations -> Comparisons -> Export   │
-               └──────────────────────────────────────────┘
+Exam Preparation
+       +
+College Prediction
+       +
+Cutoff Research
+       +
+College Comparison
+       +
+Counselling
+       +
+University Information
 ```
+
+UniGuide AI brings these workflows together.
+
+Instead of manually searching thousands of cutoff records, college websites, PDFs, previous-year questions, and counselling pages, students can use a unified platform to **prepare → analyze → predict → compare → decide**.
 
 ---
 
-## 🌟 Key Features & Capabilities
+# 🎯 College Prediction Engine
 
-### 🔮 1. Multi-Exam College Prediction (JEE & AP EAMCET)
-- **Multi-Mode Rank & Score Inputs**:
-  - **JEE Main Subject Marks**: Maths, Physics, Chemistry out of 100 each.
-  - **JEE Percentile & AIR**: Direct All India Rank or percentile entry.
-  - **JEE Advanced Rank**: Direct IIT eligibility matching.
-  - **AP EAMCET / AP EAPCET Rank**: State-level engineering rank matching.
-- **NTA & State Normalization Engine**: Calculates estimated percentiles and AIRs based on historical NTA and state distribution curves.
+The prediction engine matches a student's rank and preferences against historical admission data.
 
-### 📊 2. Tiered Admission Probability Classification
-Every prediction result is categorized with clear visual indicators:
-- 🟢 **Safe** (Rank <= 70% of historical closing rank)
-- 🔵 **Likely** (Rank <= 90% of closing rank)
-- 🟡 **Moderate** (Rank <= 105% of closing rank)
-- 🟠 **Reach** (Rank <= 125% of closing rank)
-- 🔴 **Unlikely** (Rank > 125% of closing rank)
+## JEE Main / Advanced
 
-### 🧠 3. Explainable AI Predictions
-Instead of returning unexplained labels, the system provides data-backed rationales:
+Supports:
+
+* JEE Main rank
+* JEE Main percentile
+* Category rank
+* JEE Advanced rank
+* Home state
+* Category
+* Gender
+* Preferred branch
+* College type
+* Counselling round
+* Program preferences
+
+The system can identify suitable:
+
+* IITs
+* NITs
+* IIITs
+* GFTIs
+* CSAB opportunities
+* Other counselling-specific institutions
+
+---
+
+# 🎓 AP EAMCET / AP EAPCET Predictor
+
+The AP EAMCET module provides rank-based engineering college prediction across Andhra Pradesh.
+
+The predictor supports:
+
+* AP EAMCET rank
+* Category
+* Branch preference
+* District / region
+* College type
+* Maximum annual fee
+
+The live AP EAMCET interface covers **271 colleges across 21 districts**, with category and fee information.
+
+Results are organized into realistic admission targets such as:
+
 ```text
-Branch: Computer Science & Engineering
-Status: LIKELY 🔵
-
-Your Rank:              12,500
-Previous Closing Rank:  15,200
-Rank Advantage:          2,700
-
-3-Year Trend:           Moderately Competitive (↑ 4.2%)
-Preference Match:       92%
-Data Confidence:        High (3+ Years Data Available)
-
-Why this recommendation?
-✓ Rank comfortably inside 3-year historical closing range
-✓ Branch and district match selected preferences
-✓ Annual fee (₹1.2L) is within specified maximum budget (₹1.5L)
+Dream
+Safe
 ```
 
-### 📈 4. Multi-Year Historical Cutoff Trends
-Tracks shift trajectories across consecutive counselling cycles:
-- **Increasing Competition** (`2023: 18,500` → `2024: 16,200` → `2025: 14,900` — *↑ Becoming harder*)
-- **Decreasing Competition** (`2023: 14,500` → `2024: 17,800` → `2025: 20,100` — *↓ Becoming easier*)
-
-### 🏫 5. Comprehensive College Profiles & Comparison
-- Profile details include college code, district, affiliation, autonomous status, intake capacity, annual fees, placement packages (average & highest), and hostel availability.
-- **Side-by-Side Comparison**: Compare up to 4 colleges simultaneously across cutoffs, fees, placements, and infrastructure.
-
-### ⚡ 6. AI Counselling Preference List Generator (JoSAA & AP EAMCET)
-- Automatically generates an optimal option order for counselling rounds combining admission probability, branch priority, and risk distribution (Safety vs. Reach choices).
-- **Export Formats**: One-click download as formatted Markdown (`.md`) preference sheets or copy to clipboard.
-
-### 🧠 7. Retrieval-Augmented Generation (RAG) Document Q&A
-- **Zero Hallucination Guarantee**: Strict prompt engineering enforces ground-truth extraction from official university document PDFs.
-- **Dense Vector Search**: Powered by `BAAI/bge-small-en-v1.5` embeddings and local `ChromaDB` vector store.
-- **HyDE Query Expansion**: Uses Hypothetical Document Embeddings (HyDE) for enhanced semantic matching.
-- **Page-Level Citations**: Answers include exact PDF filenames and 1-based page numbers.
-- **Dynamic Confidence Rating**: Assigns confidence metrics (0.0 to 1.0) and rating tags (`High`, `Medium`, `Low`).
-
-### 🍃 8. MongoDB Atlas & Hybrid Persistence
-- **Cloud Metadata Sync**: Persists PDF metadata, upload records, chunk counts, and file stats in MongoDB Atlas.
-- **Local Fallback Mode**: Operates using SQLite/hybrid storage if cloud database connectivity is unavailable.
-
-### 🔐 9. Admin Upload Hub & RBAC
-- Role-based access control requiring `X-Admin-Role: admin` headers.
-- Multi-file PDF drag-and-drop uploading, PyMuPDF text extraction, LangChain recursive text chunking, and ChromaDB vector purging.
+and can be filtered according to the student's preferences.
 
 ---
 
-## 🏗️ System Architecture
+# 🌎 Multi-Counselling College Prediction
 
-```mermaid
-flowchart TD
-    subgraph Client ["Frontend (React 18 + Vite + TypeScript)"]
-        UI[Glassmorphism Dashboard & Chat UI]
-        JEEPredictor[JEE Marks & Rank Predictor]
-        EAMCETPredictor[AP EAMCET College Predictor]
-        ChoiceFiller[AI Counselling Choice Filler]
-        AdminHub[Admin PDF & Dataset Hub]
-        RoleControl[RBAC Role Switcher: Student / Admin]
-    end
+The platform supports a broader counselling ecosystem including predictors for multiple state and national admission systems.
 
-    subgraph Server ["Backend (FastAPI Engine)"]
-        API[FastAPI Router /api/v1]
-        PredictorEngine[JEE & EAMCET Score-to-Rank Engine]
-        Security[Admin RBAC Header Verification Middleware]
-        PDFService[PyMuPDF Text Extractor]
-        Chunker[LangChain Recursive Character Splitter]
-        RAGPipeline[Executive RAG Pipeline & HyDE Expansion]
-        ConfidenceEngine[Dynamic Confidence Rating Metric]
-    end
+Examples include:
 
-    subgraph Storage ["Persistent Data Layer"]
-        MongoDB[(MongoDB Atlas Cloud Metadata DB)]
-        Chroma[(ChromaDB Vector Store)]
-        CutoffDB[(JoSAA & AP EAMCET Cutoff Matrix DB)]
-        Uploads[(PDF Document File Storage)]
-    end
+* JEE Main / JoSAA
+* JEE Advanced
+* CSAB
+* JAC Delhi
+* COMEDK UGET
+* MHT CET
+* WBJEE
+* GUJCET / ACPC
+* UPTAC
+* TG EAPCET
+* AP EAMCET / AP EAPCET
+* Bihar UGEAC
 
-    subgraph LLM ["Generative AI Layer"]
-        Gemini[Google Gemini 1.5 Flash API]
-    end
+The live CollegePIPE platform currently advertises these counselling predictors across multiple states.
 
-    RoleControl -->|X-Admin-Role Header| API
-    UI -->|POST /api/v1/chat| API
-    JEEPredictor -->|POST /api/v1/predict| PredictorEngine
-    EAMCETPredictor -->|POST /api/v1/predict| PredictorEngine
-    PredictorEngine --> CutoffDB
-    PredictorEngine -->|Rank Matching & Risk Tiering| ChoiceFiller
-    AdminHub -->|Upload / Ingest / Delete| Security
-    Security --> API
-    API --> MongoDB
-    API --> PDFService
-    PDFService --> Uploads
-    PDFService --> Chunker
-    Chunker --> Chroma
-    API --> RAGPipeline
-    RAGPipeline -->|Similarity Search + HyDE| Chroma
-    RAGPipeline --> Gemini
-    Gemini --> ConfidenceEngine
-    ConfidenceEngine -->|Direct Answer + Page Citations| UI
+---
+
+# 🩺 NEET UG College Predictor
+
+The platform also provides medical-college prediction functionality for NEET UG.
+
+Supported admission areas include:
+
+* MBBS
+* BDS
+* BAMS
+* BHMS
+* Other medical streams
+* All India Quota
+* State quota
+
+The broader platform currently advertises coverage across thousands of medical colleges.
+
+---
+
+# 🏫 College Discovery
+
+Students can explore colleges based on factors beyond their entrance rank.
+
+### College information can include:
+
+* College name
+* Location
+* State
+* District
+* College type
+* Fees
+* Placement information
+* NIRF ranking
+* Admission cutoffs
+* Branches
+* Courses
+* Institutional characteristics
+
+### Private College Explorer
+
+The platform also provides curated private engineering college discovery with filters around:
+
+* State
+* Tier
+* Fees
+* Placement information
+* ROI
+* Admission route
+
+---
+
+# ⚖️ College Comparison
+
+Students can compare institutions side-by-side instead of evaluating each college separately.
+
+### Example comparison factors
+
+| Category      | Comparison                   |
+| ------------- | ---------------------------- |
+| 🎓 Academics  | Institute / branch           |
+| 📊 Ranking    | NIRF / institutional ranking |
+| 💰 Cost       | Annual fees                  |
+| 💼 Placements | Average / highest packages   |
+| 📍 Location   | City / state                 |
+| 🎯 Admission  | Opening / closing ranks      |
+| 🏠 Facilities | Hostel and infrastructure    |
+| 📚 Branch     | Course-specific comparison   |
+
+The platform also provides dedicated **IIT vs NIT comparison** functionality.
+
+---
+
+# 📈 Cutoff & Admission Intelligence
+
+The prediction system uses historical counselling data to make college recommendations more meaningful.
+
+It can analyze:
+
+* Opening ranks
+* Closing ranks
+* Rank gaps
+* Historical rounds
+* Category-specific cutoffs
+* Branch-specific cutoffs
+* Multi-year trends
+
+### Example
+
+```text
+Student Rank:       12,500
+Closing Rank:       15,200
+
+Rank Advantage:      2,700
+Admission Status:    Likely
+```
+
+This converts raw cutoff tables into actionable admission information.
+
+---
+
+# 📝 Counselling & Choice Support
+
+Students often struggle with the order in which colleges and branches should be entered during counselling.
+
+UniGuide AI provides decision-support functionality for generating strategic preferences.
+
+The system can consider:
+
+* Student rank
+* College preference
+* Branch preference
+* Historical cutoffs
+* Admission probability
+* Risk tolerance
+* College quality
+* Location preferences
+
+The result can be organized into:
+
+```text
+Dream
+   ↓
+Reach
+   ↓
+Moderate
+   ↓
+Likely
+   ↓
+Safe
 ```
 
 ---
 
-## 📁 Project Folder Structure
+# 🧪 JEE Preparation Platform
 
+UniGuide AI also includes an examination-practice ecosystem.
+
+The testing platform provides:
+
+* JEE Main PYQs
+* JEE Advanced PYQs
+* Full-paper tests
+* Chapter tests
+* Full-syllabus mocks
+* Real CBT-style interface
+* Official answer keys
+* Detailed solutions
+
+The live testing platform currently advertises **20,000+ PYQs, 4,000+ non-PYQ questions, 130+ real papers and 86 chapters**, with JEE Main papers spanning 2019–2026 and JEE Advanced papers spanning 2007–2026.
+
+---
+
+# 📊 Test Performance Analytics
+
+The test system tracks student performance beyond simply showing a score.
+
+### Analytics include:
+
+* Attempt history
+* Question-level timing
+* Error classification
+* Chapter-wise mistakes
+* Incorrect-question tracking
+* Re-practice opportunities
+* Mistake Notebook
+
+This allows students to identify **what they are getting wrong and why**, rather than simply taking another test.
+
+---
+
+# 🤖 Retrieval-Augmented Generation
+
+The University Assistant uses **RAG** to answer questions from uploaded university documents.
+
+## RAG Pipeline
+
+```text
+                User Question
+                     │
+                     ▼
+              Query Processing
+                     │
+                     ▼
+              HyDE Expansion
+                     │
+                     ▼
+            Semantic Retrieval
+                     │
+                     ▼
+              ChromaDB Search
+                     │
+                     ▼
+            Relevant PDF Chunks
+                     │
+                     ▼
+              Google Gemini
+                     │
+                     ▼
+             Grounded Answer
+                ┌────┴────┐
+                ▼         ▼
+           Citations   Confidence
 ```
-rag_documents/
+
+## RAG capabilities
+
+* PDF document ingestion
+* PyMuPDF extraction
+* LangChain text chunking
+* Dense embeddings
+* ChromaDB vector search
+* `BAAI/bge-small-en-v1.5`
+* HyDE query expansion
+* Google Gemini
+* Page-level PDF citations
+* Dynamic confidence scoring
+
+---
+
+# 📄 Document Processing Pipeline
+
+Administrators can create and maintain the RAG knowledge base through the document management system.
+
+```text
+PDF Upload
+    ↓
+Text Extraction
+    ↓
+Chunking
+    ↓
+Embedding Generation
+    ↓
+Vector Indexing
+    ↓
+MongoDB Metadata
+    ↓
+RAG Retrieval
+```
+
+### Admin capabilities
+
+* Upload PDFs
+* Ingest documents
+* View document statistics
+* Manage indexed documents
+* Delete documents
+* Remove associated vectors
+* Maintain the RAG knowledge base
+
+---
+
+# 🔐 Role-Based Access
+
+The application separates student-facing and administrative functionality.
+
+### Student
+
+* College prediction
+* College discovery
+* College comparison
+* Counselling support
+* Exam preparation
+* RAG university assistant
+
+### Admin
+
+* PDF upload
+* Document ingestion
+* Vector management
+* Document statistics
+* Knowledge-base management
+
+---
+
+# 🏗️ Technical Architecture
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                     FRONTEND                                │
+│              React + TypeScript + Vite                      │
+│                                                              │
+│ Predictors │ Tests │ Colleges │ Comparison │ RAG │ Admin     │
+└──────────────────────────────┬───────────────────────────────┘
+                               │
+                               │ REST APIs
+                               ▼
+┌──────────────────────────────────────────────────────────────┐
+│                      BACKEND                                │
+│                    FastAPI + Python                          │
+│                                                              │
+│ Prediction │ RAG │ Documents │ Tests │ Counselling │ Auth    │
+└───────────────┬──────────────────────────┬───────────────────┘
+                │                          │
+                ▼                          ▼
+       ┌──────────────────┐       ┌─────────────────────┐
+       │ Prediction/Data  │       │    RAG Pipeline     │
+       │     Engine       │       │                     │
+       │                  │       │ HyDE + Retrieval    │
+       │ Cutoffs          │       │ Embeddings          │
+       │ Rank Matching    │       │ ChromaDB            │
+       │ Recommendations  │       │ Gemini              │
+       └────────┬─────────┘       └──────────┬──────────┘
+                │                            │
+                ▼                            ▼
+       ┌──────────────────┐       ┌─────────────────────┐
+       │ Historical Data  │       │     ChromaDB        │
+       └──────────────────┘       └─────────────────────┘
+                                             │
+                                             ▼
+                                   ┌─────────────────────┐
+                                   │    Google Gemini    │
+                                   └─────────────────────┘
+
+                    ┌───────────────────────────┐
+                    │       MongoDB Atlas       │
+                    │     Persistent Metadata   │
+                    └───────────────────────────┘
+```
+
+---
+
+# 🧩 Technology Stack
+
+### Frontend
+
+* React 18
+* TypeScript
+* Vite
+* Axios
+* Tailwind CSS
+
+### Backend
+
+* Python
+* FastAPI
+* Pydantic
+* PyMuPDF
+
+### AI
+
+* Google Gemini API
+* LangChain
+* HyDE
+* Vector embeddings
+* ChromaDB
+
+### Embeddings
+
+* `BAAI/bge-small-en-v1.5`
+
+### Data
+
+* MongoDB Atlas
+* ChromaDB
+* Historical counselling datasets
+* Exam question datasets
+
+### DevOps
+
+* Docker
+* Docker Compose
+* Vercel
+* Render
+
+---
+
+# 📁 Project Structure
+
+```text
+UniGuide-AI/
+│
 ├── backend/
 │   ├── app/
 │   │   ├── api/
 │   │   │   └── v1/
 │   │   │       ├── endpoints/
-│   │   │       │   ├── chat.py            # RAG Q&A query execution (/chat)
-│   │   │       │   ├── documents.py       # MongoDB document list & stats (/documents)
-│   │   │       │   ├── ingest.py          # Admin vector embedding ingestion (/ingest)
-│   │   │       │   ├── predictor.py       # JEE & AP EAMCET Predictor & Choice Engine (/predict)
-│   │   │       │   └── upload.py          # Admin PDF upload & metadata sync (/upload)
-│   │   │       └── router.py              # API v1 router definition
-│   │   ├── core/                          # Logging, database connection & config
-│   │   │   ├── config.py
-│   │   │   ├── database.py
-│   │   │   └── logging.py
-│   │   ├── models/                        # MongoDB & Pydantic data models
-│   │   ├── rag/                           # RAG pipeline, HyDE expansion & embeddings
+│   │   │       │   ├── chat.py
+│   │   │       │   ├── documents.py
+│   │   │       │   ├── ingest.py
+│   │   │       │   ├── predictor.py
+│   │   │       │   └── upload.py
+│   │   │       └── router.py
+│   │   ├── core/
+│   │   ├── models/
+│   │   ├── rag/
 │   │   │   ├── embeddings.py
 │   │   │   ├── hyde.py
 │   │   │   ├── pipeline.py
 │   │   │   └── vector_store.py
-│   │   ├── schemas/                       # Pydantic schemas (predictor.py, chat.py)
-│   │   └── services/                      # Cutoff database & PDF parsing services
-│   ├── chroma_db/                         # Persistent ChromaDB vector index directory
-│   ├── uploads/                           # Uploaded PDF document storage
-│   ├── main.py                            # FastAPI application entrypoint
-│   └── requirements.txt                   # Python backend dependencies
+│   │   ├── schemas/
+│   │   └── services/
+│   │
+│   ├── chroma_db/
+│   ├── uploads/
+│   ├── main.py
+│   └── requirements.txt
+│
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── AIChoiceFillerModal.tsx    # JoSAA / EAMCET Choice Preference Order Modal
-│   │   │   ├── HeroSection.tsx            # College Predictor Hero Banner
-│   │   │   ├── Navbar.tsx                 # Top navigation header with role switcher
-│   │   │   └── Sidebar.tsx                # Navigation sidebar
 │   │   ├── pages/
-│   │   │   ├── AdminUploadPage.tsx        # Dedicated Admin PDF Upload Hub
-│   │   │   ├── Dashboard.tsx              # Student Q&A dashboard
-│   │   │   ├── PredictorPage.tsx          # JEE & AP EAMCET College Predictor Tool
-│   │   │   └── SettingsPage.tsx           # System architecture & specs page
 │   │   ├── services/
-│   │   │   └── api.ts                     # Axios REST client & API bindings
-│   │   ├── types/                         # TypeScript interfaces & types
-│   │   ├── App.tsx                        # Master React application router
-│   │   └── main.tsx                       # React DOM entry point
-│   ├── vercel.json                        # Vercel SPA build & API proxy configuration
-│   ├── vite.config.ts                     # Vite build configuration
-│   └── package.json                       # Frontend dependencies & scripts
-├── vercel.json                            # Root Vercel routing configuration
-├── docker-compose.yml                     # Multi-container orchestrator configuration
-├── Dockerfile                             # Production container build file
-├── README.md                              # Technical documentation
-└── start_production.sh                    # Automated launcher script
+│   │   ├── types/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   ├── package.json
+│   ├── vite.config.ts
+│   └── vercel.json
+│
+├── docs/
+├── Dockerfile
+├── docker-compose.yml
+├── render.yaml
+├── start_production.sh
+├── vercel.json
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## 🛰️ REST API Specifications
+# 🔌 REST API
 
-| Method | Endpoint | Access Role | Description |
-| :--- | :--- | :--- | :--- |
-| `POST` | `/api/v1/predict` | `Student / Admin` | Predicts eligible JEE & AP EAMCET colleges; generates preference lists. |
-| `POST` | `/api/v1/chat` | `Student / Admin` | Submits chat question, performs vector similarity search, and returns direct answer with citations. |
-| `GET` | `/api/v1/documents` | `Student / Admin` | Returns list of uploaded PDF documents and MongoDB metadata records. |
-| `GET` | `/api/v1/documents/stats` | `Student / Admin` | Returns aggregate metrics (total files, ingested vectors, extracted pages). |
-| `POST` | `/api/v1/upload` | 🔒 `Admin Only` | Uploads a PDF document and registers metadata in MongoDB Atlas. |
-| `POST` | `/api/v1/ingest` | 🔒 `Admin Only` | Extracts text, generates dense vector embeddings, and indexes chunks in ChromaDB. |
-| `DELETE` | `/api/v1/documents/{id}` | 🔒 `Admin Only` | Purges PDF file, removes ChromaDB vector embeddings, and deletes MongoDB metadata. |
-
----
-
-### 📝 Example API Payloads
-
-#### 1. College Predictor (`POST /api/v1/predict`)
-
-**Request Payload:**
-```json
-{
-  "input_mode": "marks",
-  "maths_marks": 85.0,
-  "physics_marks": 80.0,
-  "chemistry_marks": 78.0,
-  "category": "OPEN",
-  "gender": "Gender-Neutral",
-  "home_state": "AU",
-  "preferred_branch": "Computer Science",
-  "institution_type": "All"
-}
-```
-
-**Response Payload:**
-```json
-{
-  "total_score": 243.0,
-  "maths_score": 85.0,
-  "physics_score": 80.0,
-  "chemistry_score": 78.0,
-  "estimated_percentile": 99.45,
-  "estimated_air": 6820,
-  "category_rank": 6820,
-  "category": "OPEN",
-  "gender": "Gender-Neutral",
-  "input_mode": "marks",
-  "total_matches": 42,
-  "high_chance_count": 18,
-  "moderate_chance_count": 14,
-  "dream_chance_count": 10,
-  "predictions": [
-    {
-      "id": "pred_nit_trichy_cse",
-      "institute_name": "National Institute of Technology Tiruchirappalli",
-      "short_name": "NIT Trichy",
-      "type": "NIT",
-      "location": "Tiruchirappalli, Tamil Nadu",
-      "state": "Tamil Nadu",
-      "branch": "Computer Science and Engineering",
-      "category": "OPEN",
-      "opening_rank": 1100,
-      "closing_rank": 7500,
-      "candidate_rank": 6820,
-      "chance_level": "High",
-      "chance_percentage": 91.2,
-      "avg_package_lpa": 27.2,
-      "annual_fee_lakhs": 1.78,
-      "nirf_rank": 9,
-      "recommendation_reason": "Your estimated AIR 6,820 comfortably falls within the historical closing rank of 7,500."
-    }
-  ],
-  "choice_filling_order": [
-    {
-      "preference_number": 1,
-      "institute_name": "National Institute of Technology Tiruchirappalli",
-      "branch": "Computer Science and Engineering",
-      "type": "NIT",
-      "closing_rank": 7500,
-      "chance_level": "High",
-      "strategy_note": "High-confidence target choice for your rank tier."
-    }
-  ]
-}
-```
+| Method   | Endpoint                  | Purpose                                            |
+| -------- | ------------------------- | -------------------------------------------------- |
+| `POST`   | `/api/v1/predict`         | College prediction and counselling recommendations |
+| `POST`   | `/api/v1/chat`            | RAG-based document Q&A                             |
+| `GET`    | `/api/v1/documents`       | Retrieve uploaded documents                        |
+| `GET`    | `/api/v1/documents/stats` | Document and ingestion statistics                  |
+| `POST`   | `/api/v1/upload`          | Upload PDF documents                               |
+| `POST`   | `/api/v1/ingest`          | Extract, embed and index documents                 |
+| `DELETE` | `/api/v1/documents/{id}`  | Delete documents and vectors                       |
 
 ---
 
-## ⚙️ Environment Variables Configuration (`.env`)
+# ⚙️ Local Development
 
-Create a `.env` file inside the `backend/` directory:
+## Requirements
 
-```env
-# Server Configuration
-HOST=0.0.0.0
-PORT=8000
-ENVIRONMENT=production
+* Python 3.9+
+* Node.js 20+
+* Git
+* MongoDB Atlas
+* Google Gemini API key
+* Docker *(optional)*
 
-# MongoDB Atlas Persistent Database
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/uniguide_db?retryWrites=true&w=majority
-DATABASE_NAME=uniguide_db
+### Backend
 
-# Google Gemini API Key
-GEMINI_API_KEY=your_google_gemini_api_key_here
-
-# Vector Store Settings
-CHROMA_PERSIST_DIRECTORY=./chroma_db
-EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5
-
-# Security
-JWT_SECRET=your_super_secret_jwt_key_here
-ADMIN_SECRET_KEY=admin
-```
-
-For the `frontend/` directory, configure `.env`:
-
-```env
-VITE_API_BASE_URL=https://rag-document-ihnt.onrender.com
-```
-
----
-
-## 🚀 Quickstart & Setup Guide
-
-### 📋 Prerequisites
-- **Node.js**: `v20.15.0+`
-- **Python**: `v3.9+`
-- **Docker & Docker Compose**: *(Optional)*
-
----
-
-### Option A: Automated One-Step Launch (Local Host)
-
-```bash
-bash start_production.sh
-```
-
-- **Frontend Application**: [http://localhost:3000](http://localhost:3000)
-- **FastAPI Backend Server**: [http://localhost:8000](http://localhost:8000)
-- **OpenAPI Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
-
----
-
-### Option B: Manual Step-by-Step Launch
-
-#### 1. Start FastAPI Backend
 ```bash
 cd backend
-python3 -m venv venv
-source venv/bin/activate
+
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
 pip install -r requirements.txt
-PYTHONPATH=. python main.py
+
+python main.py
 ```
 
-#### 2. Start React Frontend
+### Frontend
+
 ```bash
 cd frontend
+
 npm install
-npm run dev -- --port 3000
+
+npm run dev
+```
+
+### Swagger API
+
+```text
+http://localhost:8000/docs
 ```
 
 ---
 
-### Option C: Unified Docker Container Launch
+# 🐳 Docker
+
+Run the application using:
 
 ```bash
 docker-compose up -d --build
@@ -460,30 +693,95 @@ docker-compose up -d --build
 
 ---
 
-## 🛣️ Project Roadmap
+# 🔑 Environment Variables
 
-- [x] **Phase 1 — Core Architecture**: React + TypeScript frontend, FastAPI backend, ChromaDB vector store.
-- [x] **Phase 2 — RAG & Document Q&A**: Zero-hallucination Gemini pipeline with page-level PDF citations.
-- [x] **Phase 3 — JEE Marks & Rank Predictor**: Subject score to AIR converter, JoSAA choice preference sheet generator.
-- [x] **Phase 4 — AP EAMCET / AP EAPCET Support**: 5-tier probability classification (`Safe`, `Likely`, `Moderate`, `Reach`, `Unlikely`), multi-year trend detection, and explainable recommendations based on [CollegePipe AP EAMCET Specification](https://collegepipe.in/apeamcet.html).
-- [ ] **Phase 5 — ML Calibration & AI Assistant**: Natural language counselling assistant and ML-based probability calibration.
+Create `backend/.env`:
+
+```env
+HOST=0.0.0.0
+PORT=8000
+ENVIRONMENT=development
+
+MONGO_URI=your_mongodb_connection_string
+DATABASE_NAME=uniguide_db
+
+GEMINI_API_KEY=your_gemini_api_key
+
+CHROMA_PERSIST_DIRECTORY=./chroma_db
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5
+
+JWT_SECRET=your_secret
+ADMIN_SECRET_KEY=your_admin_key
+```
+
+Frontend:
+
+```env
+VITE_API_BASE_URL=http://localhost:8000
+```
+
+> ⚠️ Never commit API keys, passwords, database credentials, JWT secrets or `.env` files to GitHub.
 
 ---
 
-## ⚠️ Disclaimer
+# 🚀 Deployment
 
-> This platform is designed for educational and counselling decision-support purposes. Predictions are estimates based on historical closing rank data and statistical models. Actual admission results depend on official seat matrices, counselling rounds, reservation rules, and authority decisions. Users should always verify official data with JoSAA, CSAB, and AP EAMCET / AP EAPCET counselling authorities.
+The project supports production deployment using:
 
----
+* **Vercel** — frontend
+* **Render** — backend
+* **Docker / Docker Compose** — containerized deployment
 
-## 📄 License & Author
-
-- **License**: Released under the [MIT License](LICENSE).
-- **Author**: **Livesh L** (Artificial Intelligence & Data Science)
-- **References**: [CollegePipe.in AP EAMCET Predictor](https://collegepipe.in/apeamcet.html)
+The frontend communicates with the FastAPI backend through REST APIs.
 
 ---
 
-<div align="center">
-  <b>UniGuide AI & AP EAMCET Predictor</b> — Empowering Indian Higher Education Aspirants with Transparent RAG & Intelligent Rank Matching.
-</div>
+# 📌 Engineering Highlights
+
+This project demonstrates practical implementation of:
+
+* Full-stack application architecture
+* React + TypeScript
+* FastAPI REST APIs
+* Retrieval-Augmented Generation
+* Semantic vector search
+* Embedding-based retrieval
+* HyDE query expansion
+* LLM integration
+* PDF processing
+* Document ingestion pipelines
+* Historical-data recommendation systems
+* Rank matching algorithms
+* College comparison systems
+* Counselling decision support
+* Exam testing systems
+* Performance analytics
+* Persistent cloud databases
+* Role-based workflows
+* Docker containerization
+* Cloud deployment
+
+---
+
+# ⚠️ Disclaimer
+
+UniGuide AI is an educational and decision-support platform.
+
+College predictions and recommendations are estimates based on available historical data and system-defined algorithms. Actual admission outcomes depend on official counselling rules, seat availability, reservation policies, changing cutoffs, and decisions made by the respective authorities.
+
+Students should verify important admission information with official counselling authorities.
+
+---
+
+# 👨‍💻 Author
+
+**Triveni Nelakurthi**
+
+GitHub:
+https://github.com/triveninelakurthi9
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
