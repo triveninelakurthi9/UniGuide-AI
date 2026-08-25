@@ -1,0 +1,3 @@
+"""
+UniGuide AI application package.
+"""

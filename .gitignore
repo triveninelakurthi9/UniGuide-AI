@@ -1,0 +1,36 @@
+# Virtual environments
+venv/
+backend/venv/
+env/
+ENV/
+.venv
+
+# Node dependencies & build outputs
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+
+# Databases & Vector DB data
+*.db
+backend/*.db
+chroma_db/
+backend/chroma_db/
+
+# Environment & Secrets
+.env
+backend/.env
+
+# MacOS & IDE files
+.DS_Store
+.vscode/
+.idea/
+*.log

@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: uniguide_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=UniGuide AI
+      - APP_VERSION=1.0.0
+      - DEBUG=False
+      - EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5
+      - LLM_MODEL_NAME=gemini-1.5-flash
+      - CHROMA_COLLECTION_NAME=uniguide_university_docs
+      - MONGODB_URI=mongodb+srv://uniguide_admin:uniguide2026@cluster0.mongodb.net/?retryWrites=true&w=majority
+      - MONGODB_DB_NAME=uniguide
+    volumes:
+      - ./backend/uploads:/app/uploads
+      - ./backend/chroma_db:/app/chroma_db
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: uniguide_frontend
+    restart: always
+    ports:
+      - "3000:80"
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  chroma_data:
+  uploads_data:
