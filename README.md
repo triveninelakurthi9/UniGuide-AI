@@ -21,12 +21,12 @@ UniGuide AI is a full-stack education platform that unifies exam preparation, co
 
 ## 🌐 Live Links
 
+- 🎓 Live Application: https://collegepipe.in/apeamcet.html
 - 🚀 Frontend (Vercel): https://frontend-peach-nine-9dyn34fhbi.vercel.app/
 - 🚀 Backend (Render): https://rag-document-ihnt.onrender.com/
 - ⚙️ Backend API: https://rag-document-ihnt.onrender.com/api/v1
 - 🎯 Predictor API: https://rag-document-ihnt.onrender.com/api/v1/predict
 - 📖 Swagger Docs: https://rag-document-ihnt.onrender.com/docs
-- 🎓 AP EAMCET / EAPCET Predictor: https://collegepipe.in/apeamcet.html
 - 🐙 GitHub: https://github.com/triveninelakurthi9/UniGuide-AI
 
 ---
